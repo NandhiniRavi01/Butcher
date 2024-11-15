@@ -1,0 +1,195 @@
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-field {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .register-button {
+    background-color: #FF5F1F;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: large;
+  }
+  .style{
+    color: #000000b2;
+    font-size: large;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .terms-checkbox-container {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .sign-in{
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sign-in a{
+    color: #FF5F1F; /* Apply the desired color */
+    text-decoration: none; /* Optional: Remove underline from the link */
+  }
+  .terms-checkbox-container input {
+    margin-right: 10px;
+  }
+  .terms-checkbox-container a {
+    color: #FF5F1F; /* Apply the desired color */
+    text-decoration: none; /* Optional: Remove underline from the link */
+  }
+  
+  .terms-checkbox-container a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+  
+  
+  .password-input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .password-input-container input {
+    width: 100%;
+   
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 20px;
+  }
+  
+  .nav-buttons button {
+    background: none;
+    border: none;
+    color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap size as needed */
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    width: 50px;
+    text-transform: uppercase;
+  }
+  
+  .social-button:hover {
+    opacity: 0.8;
+  }
+  
+  .google {
+    color: #db4437;
+    background-color: white;
+    border: 1px solid #000000; /* Add border width, style, and color */
+    padding: 15px 20px; /* Optional, to adjust button padding */
+    border-radius: 50px; /* Optional, to round the corners */
+}
+
+  
+  .google:hover {
+    background-color: #c1351d;
+  }
+  
+  .facebook {
+    color: #3b5998;
+    background-color: white;
+    border: 1px solid #000000; /* Add border width, style, and color */
+    padding: 15px 20px; /* Optional, to adjust button padding */
+    border-radius: 50px; /* Optional, to round the corners */
+  }
+  
+  .facebook:hover {
+    background-color: #2d4373;
+  }
+  
+  .apple {
+   color: #000000;
+   background-color: white;
+    border: 1px solid #000000; /* Add border width, style, and color */
+    padding: 15px 20px; /* Optional, to adjust button padding */
+    border-radius: 50px; /* Optional, to round the corners */
+  }
+  
+  .apple:hover {
+    background-color: #333333;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .line-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .line {
+    border-top: 1px solid #ccc;
+    width: 100px;
+    margin: 0 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    color: #333;
+  }
+  .forgot-password {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: right;
+  }
+  
+  .forgot-password a {
+    color: #FF5F1F;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  

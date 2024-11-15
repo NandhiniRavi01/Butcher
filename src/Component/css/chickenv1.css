@@ -1,0 +1,261 @@
+.product-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.slideshow {
+  position: relative;
+  text-align: center;
+  overflow-x: scroll;
+  scroll-snap-type: mandatory;
+}
+
+.slideImage {
+  scroll-snap-align: start;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.current-price {
+  color: #f07d00;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  height: 50px;
+  background-color: #f3f3f3;
+}
+
+.details div {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.details svg {
+  margin-right: 5px;
+  color: #f07d00;
+  font-size: x-large;
+
+}
+.text-overlay {
+  position: absolute;
+  top: 20px; /* Adjust the vertical position of the text */
+  left: 45%;
+  transform: translateX(-50%); /* Center the text horizontally */
+  color: white; /* Text color for visibility */
+  font-size: 25px; /* Adjust the font size as needed */
+ 
+  
+  border-radius: 5px;
+  z-index: 10; /* Make sure the text is above the image */
+}
+
+.recommended-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Optional: adds space between images */
+  justify-content: space-between; /* Ensures even spacing between images */
+}
+
+.recommended-item {
+  width: 48%; /* Adjust width to fit 2 items per row */
+}
+
+
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .recommended-item {
+    width: 48%; /* 2 items per row on tablets and small screens */
+    margin-bottom: 100px;
+  }
+}
+
+.recommended-item1 {
+  width: 48%; /* Adjust width to fit 2 items per row */
+  padding-bottom: 100px;
+}
+
+
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .recommended-item1 {
+    width: 48%; /* 2 items per row on tablets and small screens */
+  }
+}
+
+
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.quantity-control button {
+  background-color: #eee;
+  border: none;
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  margin: 0 10px;
+  font-size: 1.2em;
+}
+
+.add-to-cart {
+  width: 50%;
+  
+  background-color: #ff9f00;
+  color: #fff;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.view{
+  font-size: 20px;
+ 
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff9f00;
+  font-style: bold;
+  text-align: right;
+}
+.seeall{
+  display: flex;
+  align-items: right;
+  font-size: 0.9em;
+  justify-content: space-between;
+}
+.seeall a{
+  color: #FF5F1F; /* Apply the desired color */
+  text-decoration: none; /* Optional: Remove underline from the link */
+}
+
+.add-button{
+  font-size: 30px;
+}
+
+.fixed-cart {
+  
+  position: fixed;
+  bottom: 0;
+  
+  width: 22%;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.fixed-cart button {
+  margin: 0 10px;
+  border: 2px solid #ccc !important;
+  padding: 10px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+}
+
+.fixed-cart .add-to-cart {
+  background-color: #ff5722;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.fixed-cart .add-to-cart i {
+  margin-right: 5px;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.image-container a{
+  text-decoration: none;
+  color: white;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Style for Back Button */
+.back-button,
+.favorite-button {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  background: none; /* No background */
+  border-color: white; /* Remove any border */
+  border-radius: 50px;
+  font-size: 25px; /* Adjust size */
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons are on top of the image */
+  color: #eee;
+}
+
+/* Position the favorite button at the top right */
+.favorite-button {
+  right: 10px; /* Adjust as needed */
+  left: auto; /* Override left alignment */
+}
+
+/* Hover effect for buttons (optional) */
+.back-button:hover,
+.favorite-button:hover {
+  opacity: 0.8; /* Make the button slightly transparent when hovered */
+}
