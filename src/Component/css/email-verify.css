@@ -1,0 +1,61 @@
+.email-verification {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .otp-inputs {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .otp-inputs input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .resend-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .resend-link {
+    color: orange;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  button {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: darkorange;
+  }
