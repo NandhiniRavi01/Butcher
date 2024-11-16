@@ -199,6 +199,7 @@
 .fixed-cart button {
   margin: 0 10px;
   border: 2px solid #ccc !important;
+  
   padding: 10px 20px;
   font-size: 30px;
   cursor: pointer;
@@ -242,10 +243,33 @@
   background: none; /* No background */
   border-color: white; /* Remove any border */
   border-radius: 50px;
+  color:white;
   font-size: 25px; /* Adjust size */
   cursor: pointer;
   z-index: 1; /* Ensure buttons are on top of the image */
   color: #eee;
+  width: 40px;
+  height: 40px;
+  
+}
+.back-button1 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: 2px solid #ccc !important;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.back-button a{
+  text-decoration:none;
+  color:white;
+}
+.back-button1 a{
+  text-decoration:none;
+  color:black;
 }
 
 /* Position the favorite button at the top right */
@@ -258,4 +282,32 @@
 .back-button:hover,
 .favorite-button:hover {
   opacity: 0.8; /* Make the button slightly transparent when hovered */
+}
+.top-header {
+  display:flex;
+  width:100%;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding: 10px;
+}
+
+.menu-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left:70px;
+}
+
+.share-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border: 2px solid #ccc !important;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
 }

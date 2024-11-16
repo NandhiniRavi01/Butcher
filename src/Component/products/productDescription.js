@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaTruck, FaClock, FaStar } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import '../css/chickenv1.css';
+import { useNavigate } from 'react-router-dom';
+import '../css/productDescription.css';
 
 const ProductDescription = () => {
   const images = [
@@ -13,12 +13,10 @@ const ProductDescription = () => {
   const [touchStartX, setTouchStartX] = useState(null);
   const totalImages = images.length;
 
-  const navigate = useNavigate();  // Initialize navigate
+  const navigate = useNavigate();
+  const [isFavorite, setIsFavorite] = useState(false);
+  const toggleFavorite = () => setIsFavorite(!isFavorite);
 
-  const [isFavorite, setIsFavorite] = useState(false); // Add state for favorite
-  const toggleFavorite = () => setIsFavorite(!isFavorite); // Function to toggle favorite status
-
-  // Automatic slideshow effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
@@ -52,7 +50,6 @@ const ProductDescription = () => {
   };
 
   const [quantity, setQuantity] = useState(4);
-
   const increaseQuantity = () => setQuantity(quantity + 1);
   const decreaseQuantity = () => {
     if (quantity > 1) setQuantity(quantity - 1);
@@ -60,17 +57,26 @@ const ProductDescription = () => {
 
   return (
     <div className="product-page">
+      {/* Header Section */}
+      {isFavorite && (
+        <div className="top-header">
+          <button className="back-button1">
+            <a href="/home">{'<'}</a>
+          </button>
+          <h2 className="menu-title">About This Menu</h2>
+          <button
+            className="share-button"
+            onClick={() => alert('Share functionality coming soon!')}
+          >
+            <i className="fas fa-share-alt"></i> 
+          </button>
+        </div>
+      )}
+
+      {/* Slideshow Section */}
       <section className="slideshow">
         <article className="slideImage">
           <div className="image-container">
-          <button className="back-button">
-             <a href='/home'>{'<'}</a>
-          </button>
-
-            <div className="text-overlay">About This Menu</div>
-            <button className="favorite-button" onClick={toggleFavorite}>
-              {isFavorite ? '❤️' : '♡'}
-            </button>
             <img
               src={images[currentImageIndex]}
               alt="Product"
@@ -78,6 +84,24 @@ const ProductDescription = () => {
               onTouchMove={handleTouchMove}
               className="slideshow-image"
             />
+            {!isFavorite && (
+              <div className="overlay">
+                <button className="back-button">
+                  <a href="/home">{'<'}</a>
+                </button>
+                <div className="text-overlay">About This Menu</div>
+              </div>
+            )}
+            <button
+              className="favorite-button"
+              onClick={toggleFavorite}
+              style={{
+                color: isFavorite ? 'red' : 'white',
+                backgroundColor: isFavorite ? 'white' : 'transparent',
+              }}
+            >
+              {isFavorite ? '❤️' : '♡'}
+            </button>
           </div>
         </article>
       </section>
@@ -101,7 +125,8 @@ const ProductDescription = () => {
       </div>
       <h2>Description</h2>
       <p>
-        Teach employees how to break down a whole chicken into parts: breasts, wings, thighs, and drumsticks.
+        Teach employees how to break down a whole chicken into parts: breasts,
+        wings, thighs, and drumsticks.
       </p>
 
       {/* Recommended Section */}
@@ -113,33 +138,33 @@ const ProductDescription = () => {
       </div>
       <div className="recommended-section">
         <div className="recommended-item">
-          <img src="/Image/chicken-curry.png" />
-         
+          <img src="/Image/chicken-curry.png" alt="Chicken Curry" />
         </div>
         <div className="recommended-item">
-          <img src="/Image/chicken-legs.png" />
-          
-        </div>
-        
-        <div className="recommended-item1">
-          <img src="/Image/mutton.png" />
-          
+          <img src="/Image/chicken-legs.png" alt="Chicken Legs" />
         </div>
         <div className="recommended-item1">
-          <img src="/Image/curry-cut.png" />
-          
+          <img src="/Image/mutton.png" alt="Mutton" />
+        </div>
+        <div className="recommended-item1">
+          <img src="/Image/curry-cut.png" alt="Curry Cut" />
         </div>
       </div>
 
       {/* Quantity Control */}
       <div className="fixed-cart">
-        <div className='add-button'><button onClick={decreaseQuantity}>-</button></div>
+        <div className="add-button">
+          <button onClick={decreaseQuantity}>-</button>
+        </div>
         <h1>{quantity}</h1>
-        <div className='add-button'><button onClick={increaseQuantity}>+</button></div>
+        <div className="add-button">
+          <button onClick={increaseQuantity}>+</button>
+        </div>
 
         {/* Add to Cart Button */}
         <button className="add-to-cart">
-          <i className="fas fa-shopping-cart"></i><p style={{ fontSize: '20px' }}>Add to Cart</p>
+          <i className="fas fa-shopping-cart"></i>
+          <p style={{ fontSize: '20px' }}>Add to Cart</p>
         </button>
       </div>
     </div>

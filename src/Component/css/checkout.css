@@ -1,0 +1,72 @@
+.checkout-container {
+    
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    
+      }
+      
+header {
+        display: flex;
+        align-items: center;
+      }
+      
+.text-align {
+        margin: 0 auto;
+      }
+  
+  .payment-section,
+  .delivery-section {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  
+  .payment-section label,
+  .delivery-section label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .payment-section input,
+  .delivery-section input {
+    margin-right: 10px;
+  }
+  
+  .proceed-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .payment-logo{
+    max-width : 5em;
+    max-height : 5em;
+
+  }
+
+
+  
+  
+  .small-line {
+    display: block;
+    
+    height: 1px; /* Adjust thickness of the line */
+    background-color: grey; /* Set the color of the line */
+    margin: 20px 0; /* Add space above and below the small-line */
+    width:320px;
+    margin-left:30px;
+  }
+  .payment-options{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius:8px;
+    height:290px;
+  }
+  .payment-option1{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius:8px;
+    height:150px;
+    
+  }
