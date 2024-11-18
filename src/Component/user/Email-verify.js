@@ -31,7 +31,13 @@ function EmailVerification() {
 
   return (
     <div className="email-verification">
-      <h2>Email Verification</h2>
+       <header>
+        <button className="back-button1"> <a href="/pop-up"> &lt;</a></button>
+        <h1 style={{fontSize:'20px'}}>
+          OTP
+        </h1>
+      </header>
+      <h4 className="margin-top">Email Verification</h4>
       <p>
         Enter the verification code we sent you on:{" "}
         <span>vignesh*****@gmail.com</span>
@@ -47,15 +53,15 @@ function EmailVerification() {
         ))}
       </div>
       <div className="resend-section">
-        <p>
+        <p className="email-verify">
           Didn’t receive code? <span className="resend-link">Resend</span>
-        </p>
-        <p>
+        </p></div>
+        <p className="email-verify">
           <FaClock style={{ marginRight: "5px", color: "#555" }} /> {/* Clock icon */}
           {formatTime(timer)}
         </p>
-      </div>
-      <button>Continue</button>
+      
+      <button className="email">Continue</button>
     </div>
   );
 }

@@ -1,0 +1,106 @@
+.forgot-password {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+.register-form1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.forget-style {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column; /* Align the options vertically */
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center; /* Align items (icon + text) horizontally */
+  gap: 10px;
+  border: 1px solid #ccc; /* Default border color */
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  width: 360px; /* Optional: define width if needed */
+  position: relative;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.option{
+  border-color: #FF5F1F; /* Active (selected) border color */
+}
+
+.icon {
+  font-size: 30px; /* Size of the icon */
+  color: #25D366; /* WhatsApp color, change accordingly */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+  align-items: flex-start; /* Align text to the left */
+}
+
+.phone-number, .email_id {
+  display: block; /* Forces text to be on a new line */
+  margin-top: 5px; /* Optional: adds space between the lines */
+}
+
+.tick-symbol {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  color: white; /* White color for the tick symbol */
+  background-color: #FF5F1F; /* Background color for the tick symbol */
+  padding: 5px; /* Add padding to the tick symbol */
+  border-radius: 50%; /* Circular background for the tick */
+  display: none; /* Initially hidden */
+}
+
+.option.selected .tick-symbol {
+  display: block; /* Show the tick symbol when selected */
+}
+
+.forget-para {
+  font-size: 15px;
+  text-align: left;
+}
+
+.forget {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.forget:hover {
+  background-color: darkorange;
+}

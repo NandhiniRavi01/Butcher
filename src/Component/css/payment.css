@@ -98,9 +98,9 @@
     font-size:20px;
     color:grey;
   }
-  .line {
+  .fullline {
     display: block;
-    width: 100%; /* This makes the line span the full width of its container */
+    width: 350px;
     height: 1px; /* Adjust thickness of the line */
     background-color: grey; /* Set the color of the line */
   }

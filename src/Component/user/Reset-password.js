@@ -17,9 +17,15 @@ function ResetPassword() {
 
   return (
     <div className="reset-password">
+      <header>
+        <button className="back-button1"> <a href="/pop-up"> &lt;</a></button>
+        <h1 style={{fontSize:'20px'}}>
+          Reset Password
+        </h1>
+      </header>
       <div className="header">
-        <button className="back-button">{"<"}</button>
-        <h2>Reset Password</h2>
+        
+        <h1>Reset Password</h1>
       </div>
       <p>Your new password must be different from the previously used password</p>
 

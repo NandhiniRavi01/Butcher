@@ -5,14 +5,16 @@
     padding: 20px;
   }
   
-  h2 {
+  .margin-top {
     font-size: 24px;
     margin-bottom: 10px;
+    margin-top: 30px;
   }
   
-  p {
+  .email-verify {
     color: #666;
     margin: 10px 0;
+    text-align: center;
   }
   
   .otp-inputs {
@@ -36,6 +38,7 @@
     align-items: center;
     color: #666;
     font-size: 14px;
+    text-align: center;
   }
   
   .resend-link {
@@ -44,18 +47,19 @@
     text-decoration: underline;
   }
   
-  button {
+  .email {
     width: 100%;
-    background-color: orange;
+    background-color: #FF5F1F;
     color: white;
+    padding: 15px;
     border: none;
-    border-radius: 8px;
-    padding: 10px;
+    border-radius: 50px;
+   
     margin-top: 20px;
     cursor: pointer;
     font-size: 16px;
   }
   
-  button:hover {
+  .email:hover {
     background-color: darkorange;
   }

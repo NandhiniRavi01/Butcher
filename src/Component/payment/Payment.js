@@ -5,7 +5,7 @@ const PaymentPage = () => {
   return (
     <div className="payment-page">
       <header>
-        <button className="back-button1">&lt;</button>
+        <button className="back-button1"> <a href="/details"> &lt;</a></button>
         <h1>Payment</h1>
       </header>
       
@@ -56,7 +56,7 @@ const PaymentPage = () => {
 
       </div>
       
-            <span className="line"></span>
+            <span className="fullline"></span>
            
          
       <div className="delivery-info">

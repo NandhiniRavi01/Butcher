@@ -1,0 +1,213 @@
+.card-manager {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.card-display {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: linear-gradient(135deg, #f77f00, #ffba08);
+  color: white;
+  padding: 70px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card-details div {
+  margin-bottom: 5px;
+}
+
+.payment-methods {
+  margin-bottom: 20px;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.payment-method span {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.delete-button {
+  
+  color: red;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  
+  
+  font-size: 18px;
+  border: 2px solid #ccc !important;
+  
+  width: 40px;
+  height: 40px;
+}
+
+.delete-button .fa-trash {
+  color: red; /* icon color */
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.delete-button .fa-trash:hover {
+  color: white; /* icon color when hovering */
+}
+
+
+.add-card-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-card-btn:hover {
+  background-color: #e06a00;
+}
+.payment-method.selected {
+  border: 2px solid orange;  /* Change border to orange when selected */
+  background-color: #f9f9f9; /* Optional: Add background color to highlight selected card */
+}
+.user{
+  color:#f8f9fa;
+}
+.card-details span {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the space between the two spans */
+  font-size: 14px;
+}
+.card-details {
+  display: flex;
+  gap: 10px; /* Small gap between the spans */
+  align-items: center;
+}
+
+
+
+.big-dots {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of dots to next line */
+  align-items: center;
+  gap: 5px; /* Adds general gap between dots */
+}
+
+.circle-dot {
+  display: inline-block;
+  width: 8px;  /* Dot size */
+  height: 8px;
+  background-color: #ffffff;  /* Dot color */
+  border-radius: 50%;  /* Circular shape */
+}
+
+.big-dots .circle-dot:nth-child(4n) {
+  margin-right: 10px;  /* Adds extra margin after every 4th dot */
+}
+
+
+.size{
+  font-size: 25px;
+}
+.dots-container {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Default spacing between items */
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.slash {
+  font-size: 25px; /* Same size as the dots */
+  line-height: 20px; /* Center align with dots */
+}
+
+.dot:nth-child(3) {
+  margin-right: 15px; /* Gap after the first three dots */
+}
+
+.dot:nth-child(6) {
+  margin-right: 50px; /* Gap after the next six dots */
+}
+
+
+.circle-container {
+  position: relative;
+  width: 300px;  /* Container width */
+  height: 60px;  /* Container height */
+}
+
+.circle {
+  position: absolute;
+  width: 60px;   /* Size of the circle */
+  height: 60px;  /* Size of the circle */
+  border-radius: 50%;
+  background-color:  rgb(243, 241, 241);;  /* Grey color for the circles */
+  border-color: #6c757d;
+}
+
+.right-circle {
+  right: 0;      /* Position the right circle on the right side */
+}
+
+.left-circle {
+  right: 30px;   /* Position the left circle to overlap halfway into the right circle */
+}
+
+.overlap {
+  position: absolute;
+  width: 19px;   /* Width of the overlap */
+  height: 30px;  /* Height of the overlap */
+  background-color: rgb(255, 255, 255);  /* Red color for the overlapping section */
+  border-radius: 50%;
+  right: 42px;   /* Align the red circle in the middle of the overlap */
+  top: 15px;     /* Center the red circle vertically */
+}
+.cardname{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.number{
+  margin-left: 40px;
+}
+
+
+
+
+
+
