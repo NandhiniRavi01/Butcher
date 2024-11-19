@@ -21,7 +21,7 @@ import DeleteConfirmation from "./Component/cardpage/deleteconformation.js";
 import AddCard from "./Component/cardpage/Addcard.js";
 import Onboarding from "./Component/user/OnboardingContainer.js";
 import History from "./Component/user/History.jsx";
-import Items from "./Component/user/items.jsx";
+import Items from "./Component/user/Items.jsx";
 import Order from "./Component/user/Order.jsx";
 import Home from "./Component/user/Home.jsx";
 
