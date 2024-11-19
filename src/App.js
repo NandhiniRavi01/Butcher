@@ -20,14 +20,20 @@ import CardManager from "./Component/cardpage/cardmanager.js";
 import DeleteConfirmation from "./Component/cardpage/deleteconformation.js";
 import AddCard from "./Component/cardpage/Addcard.js";
 import Onboarding from "./Component/user/OnboardingContainer.js";
+import History from "./Component/user/History.jsx";
+import Items from "./Component/user/items.jsx";
+import Order from "./Component/user/Order.jsx";
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* User-related routes */}
-     <Route path="/" element={<Onboarding />} />
+        <Route path="/" element={<Onboarding />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/items" element={<Items />} />
   
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
