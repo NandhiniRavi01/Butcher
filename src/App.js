@@ -19,14 +19,16 @@ import Checkout from "./Component/payment/Checkout.js";
 import CardManager from "./Component/cardpage/cardmanager.js";
 import DeleteConfirmation from "./Component/cardpage/deleteconformation.js";
 import AddCard from "./Component/cardpage/Addcard.js";
-import 
+import Onboarding from "./Component/user/OnboardingContainer.js";
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* User-related routes */}
-        <Route path="/" element={<Register />} />
+     <Route path="/" element={<Onboarding />} />
+        <Route path="/register" element={<Register />} />
+  
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/pop-up" element={<SelectOption />} />
