@@ -4,20 +4,20 @@ import { Avatar, BottomNavigation, BottomNavigationAction, Box, Button, FormCont
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import chicken from '../Assets/Chicken_image.png'
-import Mutton from '../Assets/Mutton.png'
-import Eggs from '../Assets/Egg.png'
-import freshChicken from '../Assets/fresh_chicken.png'
-import fullChicken from '../Assets/full_chicken.png'
-import chickenBreast from '../Assets/chicken_breast.png'
-import chickenWings from  '../Assets/chicken_wings.png'
+import chicken from '../../Assets/Chicken_image.png'
+import Mutton from '../../Assets/Mutton.png'
+import Eggs from '../../Assets/Egg.png'
+import freshChicken from '../../Assets/fresh_chicken.png'
+import fullChicken from '../../Assets/full_chicken.png'
+import chickenBreast from '../../Assets/chicken_breast.png'
+import chickenWings from  '../../Assets/chicken_wings.png'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import StarIcon from '@mui/icons-material/Star';
 import HomeIcon from '@mui/icons-material/Home';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import OutdoorGrillIcon from '@mui/icons-material/OutdoorGrill';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import AvatarImg from '../Assets/Avatar.png'
+import AvatarImg from '../../Assets/Avatar.png'
 
 const data=[
   {img:freshChicken,title:"Fresh Chicken",rating:"4.9",rate:"Rs 280",rate1:"| Rs 240/kg"},    
