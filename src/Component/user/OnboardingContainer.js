@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import ArrowForward from '@mui/icons-material/ArrowForward';
-import img1 from '../Assessts/onboarding1.png';
-import img2 from '../Assessts/onboarding2.png';
-import img3 from '../Assessts/onboarding3.png';
+import img1 from '../Assets/onboarding1.png';
+import img2 from '../Assets/onboarding2.png';
+import img3 from '../Assets/onboarding3.png';
 
 const Onboarding = () => {
   const [currentPage, setCurrentPage] = useState(1);
