@@ -23,6 +23,7 @@ import Onboarding from "./Component/user/OnboardingContainer.js";
 import History from "./Component/user/History.jsx";
 import Items from "./Component/user/items.jsx";
 import Order from "./Component/user/Order.jsx";
+import Home from "./Component/user/Home.jsx";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         {/* User-related routes */}
         <Route path="/" element={<Onboarding />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/history" element={<History />} />
         <Route path="/order" element={<Order />} />
