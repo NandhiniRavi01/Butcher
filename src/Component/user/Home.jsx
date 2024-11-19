@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MeatImage from '../Assets/image.png';
+import MeatImage from '../../Assets/image.png';
 import { Avatar, BottomNavigation, BottomNavigationAction, Box, Button, FormControl, Grid, MenuItem, Select, Typography } from '@mui/material';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchIcon from '@mui/icons-material/Search';
