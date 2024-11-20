@@ -24,6 +24,9 @@ import History from "./Component/user/History.jsx";
 import Items from "./Component/user/Items.jsx";
 import Order from "./Component/user/Order.jsx";
 import Home from "./Component/user/Home.jsx";
+import Cart from './Component/user/Cart.js'
+import WishList from "./Component/user/WishList.js";
+import Notification from "./Component/user/Notification.js";
 
 function App() {
   return (
@@ -53,6 +56,10 @@ function App() {
         <Route path="/card-list" element={<CardManager />} />
         <Route path="/delete/:cardId" element={<DeleteConfirmation />} />
         <Route path="/add-card" element={<AddCard />} />
+        <Route path="/cart" element={<Cart/>} />
+        <Route path="/wishlist" element={<WishList/>} />
+        <Route path="/notification" element={<Notification/>} />
+        <Route></Route>
       </Routes>
     </Router>
   );
