@@ -28,6 +28,11 @@ import Cart from './Component/user/Cart.js'
 import WishList from "./Component/user/WishList.js";
 import Notification from "./Component/user/Notification.js";
 
+import DeliverPerson from "./Component/DesktopUser/DeliverPerson.js";
+import OrderList from "./Component/DesktopUser/OrderList.js";
+import NotifiactionDesktop from "./Component/DesktopUser/NotifiactionDesktop.js";
+import Settings from "./Component/DesktopUser/Settings.js";
+
 function App() {
   return (
     <Router>
@@ -59,7 +64,14 @@ function App() {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/wishlist" element={<WishList/>} />
         <Route path="/notification" element={<Notification/>} />
-        <Route></Route>
+
+
+        {/*desktop user */}
+        <Route path="/deliveryperson" element={<DeliverPerson/>} />
+        <Route path="/notification" element={<NotifiactionDesktop/>} />
+        <Route path="/settings" element={<Settings/>} />
+        <Route path="/orderlist" element={<OrderList/>} />
+
       </Routes>
     </Router>
   );
